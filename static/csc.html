@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CSC desk - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="container section stack">
+  <h1>CSC operator desk</h1>
+  <p class="muted">You see only the people you created. Each person needs their own consent.</p>
+  <div id="denied" class="notice n-warn hidden">Please <a href="/login.html?next=/csc.html">log in as a CSC operator</a>.</div>
+
+  <div class="split">
+    <div class="card stack">
+      <h2>Add a person</h2>
+      <div><label for="pn">Name</label><input type="text" id="pn" /></div>
+      <button id="add" class="btn-lg">+ Start with consent</button>
+    </div>
+    <div class="card stack">
+      <h2>My people</h2>
+      <div id="people" class="stack"></div>
+    </div>
+  </div>
+
+  <div class="card stack">
+    <h2>Submitted applications</h2>
+    <p class="muted">Demo tracking. Advance the status to show SUBMITTED → UNDER SCRUTINY → APPROVED.</p>
+    <div style="overflow:auto"><table class="t" id="queue"></table></div>
+  </div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/pages/csc.js"></script>
+</body>
+</html>

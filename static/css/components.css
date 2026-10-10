@@ -1,0 +1,39 @@
+button, .btn { font: inherit; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: .75rem 1.3rem; border-radius: 12px; border: 0; cursor: pointer; background: var(--brand); color: #fff; transition: transform .1s, box-shadow .15s, background .15s; }
+button:hover, .btn:hover { background: var(--brand-dark); text-decoration: none; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(15,118,110,.25); }
+button:disabled { opacity: .5; cursor: not-allowed; transform: none; box-shadow: none; }
+.btn-ghost { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+.btn-ghost:hover { background: #f1f5f9; box-shadow: none; color: var(--ink); }
+.btn-accent { background: var(--accent); color: #111; } .btn-accent:hover { background: #d97706; }
+.btn-danger { background: var(--bad); } .btn-danger:hover { background: #991b1b; }
+.btn-lg { padding: 1rem 1.8rem; font-size: 1.1rem; } .btn-sm { padding: .4rem .8rem; font-size: .85rem; border-radius: 9px; }
+.btn-block { width: 100%; }
+label { font-weight: 600; font-size: .92rem; display: block; margin-bottom: .3rem; }
+input[type=text], input[type=tel], input[type=number], input[type=search], select, textarea { font: inherit; width: 100%; padding: .8rem 1rem; border: 1.5px solid var(--line); border-radius: 12px; background: #fff; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-light); }
+
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem; box-shadow: var(--shadow); }
+.card.hover:hover { transform: translateY(-3px); transition: .15s; }
+.badge { display: inline-flex; align-items: center; gap: .3rem; padding: .22rem .7rem; border-radius: 999px; font-size: .78rem; font-weight: 700; }
+.b-ok { background: var(--ok-bg); color: var(--ok); } .b-warn { background: var(--warn-bg); color: var(--warn); }
+.b-bad { background: var(--bad-bg); color: var(--bad); } .b-info { background: var(--info-bg); color: var(--info); } .b-gray { background: #e2e8f0; color: #334155; }
+.notice { padding: .8rem 1rem; border-radius: 12px; font-size: .92rem; }
+.n-warn { background: var(--warn-bg); color: #78350f; } .n-info { background: var(--info-bg); color: #1e3a8a; } .n-ok { background: var(--ok-bg); color: #14532d; }
+.banner { background: var(--warn-bg); color: #78350f; text-align: center; padding: .45rem 1rem; font-size: .88rem; font-weight: 600; }
+
+.stepper { display: flex; gap: .4rem; margin: 1.2rem 0 1.6rem; }
+.step { flex: 1; text-align: center; font-size: .75rem; color: var(--muted); font-weight: 600; }
+.step .bar { height: 6px; border-radius: 99px; background: var(--line); margin-bottom: .35rem; }
+.step.done .bar, .step.cur .bar { background: var(--brand); } .step.cur { color: var(--brand); }
+@media (max-width: 600px) { .step span { display: none; } }
+
+#toasts { position: fixed; right: 1rem; bottom: 1rem; z-index: 99; display: flex; flex-direction: column; gap: .5rem; }
+.toast { background: var(--ink); color: #fff; padding: .8rem 1.1rem; border-radius: 12px; box-shadow: var(--shadow); animation: pop .2s; max-width: 340px; }
+.toast.err { background: var(--bad); } .toast.ok { background: var(--ok); }
+@keyframes pop { from { transform: translateY(10px); opacity: 0; } }
+.footer { background: #0f172a; color: #cbd5e1; padding: 2.5rem 0; margin-top: 3rem; font-size: .9rem; }
+.footer a { color: #99f6e4; }
+.spinner { width: 22px; height: 22px; border: 3px solid var(--line); border-top-color: var(--brand); border-radius: 50%; animation: spin .7s linear infinite; display: inline-block; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.speaker { background: var(--brand-light); color: var(--brand-dark); padding: .45rem .8rem; border-radius: 999px; font-size: .9rem; }
+.speaker:hover { background: #99f6e4; box-shadow: none; color: var(--brand-dark); }
+@media print { .nav, .footer, .no-print, #toasts, .banner { display: none !important; } body { background: #fff; } .card { box-shadow: none; } }

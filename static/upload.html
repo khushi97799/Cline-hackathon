@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Documents - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="narrow stack">
+  <div id="stepper"></div>
+  <div class="card stack" id="upload-card">
+    <div class="row" style="justify-content:space-between"><h2 data-i18n="upload_title">Upload documents</h2><span id="speak-slot"></span></div>
+    <p class="muted" data-i18n="upload_hint"></p>
+    <label class="dropzone" id="drop" for="files">
+      <div style="font-size:2.4rem">📄</div>
+      <b data-i18n="upload_drop">Tap to choose photos</b>
+      <input id="files" type="file" accept="image/*" multiple hidden />
+    </label>
+    <div id="chosen"></div>
+    <div class="notice n-info" data-i18n="upload_privacy"></div>
+    <button id="read" class="btn-lg btn-block hidden" data-i18n="upload_go">Read my documents</button>
+    <div class="center muted" data-i18n="upload_or">or</div>
+    <a class="btn btn-ghost btn-block" href="/questions.html" data-i18n="upload_skip">Skip this step</a>
+  </div>
+
+  <div class="card stack hidden" id="confirm-card">
+    <h2 data-i18n="confirm_title">Please check these details</h2>
+    <p class="muted" data-i18n="confirm_sub"></p>
+    <div id="fields"></div>
+    <div id="empty" class="notice n-warn hidden" data-i18n="confirm_empty"></div>
+    <button id="save" class="btn-lg btn-block" data-i18n="confirm_save">Confirm and continue</button>
+  </div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/pages/upload.js"></script>
+</body>
+</html>

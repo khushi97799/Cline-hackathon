@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Schemes - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="container section stack">
+  <div class="row" style="justify-content:space-between;align-items:flex-start">
+    <div><h1 data-i18n="browse_title">Government schemes</h1><p class="muted" data-i18n="browse_sub"></p></div>
+    <div id="voice-slot"></div>
+  </div>
+
+  <div class="card fbar">
+    <div class="fgrid">
+      <div><label for="q" data-i18n="search_ph">Search</label><input type="search" id="q" data-i18n-ph="search_ph" /></div>
+      <div><label for="f-level" data-i18n="f_level">Level</label><select id="f-level"></select></div>
+      <div><label for="f-state" data-i18n="f_state">State</label><select id="f-state"></select></div>
+      <div><label for="f-deadline" data-i18n="f_deadline">Last date</label><select id="f-deadline"></select></div>
+      <div><label for="f-sort" data-i18n="f_sort">Sort by</label><select id="f-sort"></select></div>
+    </div>
+    <div><label data-i18n="f_for">Who is it for?</label><div class="chips" id="f-tags"></div></div>
+    <div class="row">
+      <label style="display:flex;gap:.5rem;align-items:center;margin:0"><input type="checkbox" id="f-verified" style="width:auto" /> <span data-i18n="f_only_verified">Only verified by admin</span></label>
+      <button type="button" class="btn-ghost btn-sm" id="clear" data-i18n="f_clear">Clear all filters</button>
+    </div>
+  </div>
+
+  <div class="row" style="justify-content:space-between">
+    <span class="result-count" id="count"></span>
+    <span class="active-filters" id="active"></span>
+  </div>
+  <div class="grid" id="list" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr))"></div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/deadline-ui.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/schemes.js"></script>
+</body>
+</html>

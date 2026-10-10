@@ -1,0 +1,49 @@
+{
+  "scheme_id": "pm-kisan",
+  "name": "PM-KISAN",
+  "benefit": "Rs. 6,000 per year in three installments of Rs. 2,000",
+  "category": "agriculture",
+  "status": "draft",
+  "documents": [
+    {
+      "doc_id": "land-record",
+      "name": "Land record (khasra/khatauni)",
+      "issuing_office_id": "tehsil-office-generic",
+      "what_to_carry": [
+        "Identity proof",
+        "Address proof"
+      ],
+      "form": "Land record extract request form (available at Tehsil office)",
+      "official_link": "https://pmkisan.gov.in/",
+      "steps": [
+        "Visit the Tehsil/Block office land records section",
+        "Submit the land record extract request form with identity proof",
+        "Collect the signed/stamped land record extract"
+      ]
+    },
+    {
+      "doc_id": "bank-account",
+      "name": "Bank account passbook copy",
+      "issuing_office_id": "csc-center-generic",
+      "what_to_carry": [
+        "Identity proof"
+      ],
+      "form": "Bank account opening / passbook request form",
+      "official_link": "https://pmkisan.gov.in/",
+      "steps": [
+        "Visit your bank branch or nearest CSC centre",
+        "Request a passbook copy or bank account opening if you do not have one",
+        "Keep a photocopy of the first page of the passbook"
+      ]
+    }
+  ],
+  "source": {
+    "url": "https://pmkisan.gov.in/",
+    "raw_file": "data/raw/pm-kisan.txt"
+  },
+  "level": "central",
+  "state": "ALL",
+  "tags": [
+    "farmer"
+  ]
+}

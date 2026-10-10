@@ -1,0 +1,15 @@
+Pradhan Mantri Ujjwala Yojana (PMUY) Guidelines (sample source text for seeding)
+
+Objective: To provide LPG (cooking gas) connections to women from Below Poverty Line (BPL)
+households.
+
+Benefits: A free LPG connection with financial assistance for the first refill and stove,
+provided to eligible women applicants.
+
+Eligibility: The applicant must be a woman above 18 years of age. The applicant's household
+should belong to a BPL family as per the State/UT list, or belong to one of the specified
+SECC-2011 deprivation categories. The applicant should not already have an LPG connection
+in her name in any oil marketing company.
+
+Required documents: proof of age, proof of address, BPL certificate or SECC list inclusion
+proof, and bank account details for subsidy transfer.

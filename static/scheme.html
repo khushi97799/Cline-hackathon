@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Scheme - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="narrow stack" id="page">
+  <div class="card stack">
+    <div class="row" style="justify-content:space-between"><span class="badge b-info" id="cat"></span></div>
+    <h1 id="name">…</h1>
+    <p id="benefit"></p>
+    <div class="row" id="meta"></div>
+    <div id="deadline"></div>
+    <div id="tags" class="chips"></div>
+    <div id="voice-slot"></div>
+    <a id="official" class="btn btn-ghost btn-sm no-print" target="_blank" rel="noopener"></a>
+  </div>
+
+  <div class="card stack">
+    <h2 data-i18n="detail_checklist">Documents checklist</h2>
+    <p id="have-sum" class="muted"></p>
+    <div id="docs" class="stack"></div>
+    <div class="notice n-warn" data-i18n="confirm_before_you_go"></div>
+  </div>
+
+  <div class="card stack">
+    <h2 data-i18n="detail_rules">How this scheme is checked</h2>
+    <div id="rules"></div>
+  </div>
+
+  <div class="row no-print">
+    <button id="print" class="btn-ghost" data-i18n="print_packet">Print packet</button>
+    <button id="apply" class="btn-accent" data-i18n="detail_apply">Apply online (demo)</button>
+  </div>
+
+  <div class="card stack hidden" id="packet-values">
+    <h3 data-i18n="confirm_title">Confirmed details</h3><div id="values"></div>
+  </div>
+
+  <div class="card stack hidden no-print" id="submit-card">
+    <h2 data-i18n="submit_title">Submit application (simulation)</h2>
+    <div class="notice n-warn" data-i18n="submission_simulated_notice"></div>
+    <div id="name-ask" class="hidden"><label data-i18n="field_name_ask">Your name</label><input type="text" id="pname" /></div>
+    <div id="otp-wrap" class="stack"><div><label data-i18n="submit_otp">Enter demo code</label>
+      <input type="text" id="otp" class="otp-input" maxlength="6" inputmode="numeric" />
+      <div id="code-msg" class="notice n-info hidden" style="margin-top:.5rem"></div>
+      <button type="button" id="resend-code" class="btn-ghost btn-sm" style="margin-top:.5rem">↻ Send code again</button></div>
+      <button id="go" class="btn-lg btn-block" data-i18n="submit_go">Submit</button></div>
+    <ul class="progress-steps hidden" id="prog"><li></li><li></li><li></li></ul>
+  </div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/deadline-ui.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/scheme.js"></script>
+</body>
+</html>

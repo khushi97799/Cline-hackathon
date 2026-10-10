@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Receipt - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="narrow stack">
+  <div class="receipt stack center" id="r">
+    <span class="sim-tag">SIMULATION</span>
+    <div class="check">✓</div>
+    <h2 data-i18n="receipt_title">Application received (simulation)</h2>
+    <div><div class="muted" data-i18n="submission_arn_label">Reference number</div><div class="arn" id="arn"></div></div>
+    <table class="t" style="text-align:left">
+      <tr><th data-i18n="receipt_scheme">Scheme</th><td id="rs"></td></tr>
+      <tr><th data-i18n="benefit_label">Benefit</th><td id="rb"></td></tr>
+      <tr><th data-i18n="receipt_time">Time</th><td id="rt"></td></tr>
+      <tr><th data-i18n="receipt_sla">Expected processing time</th><td data-i18n="receipt_sla_v"></td></tr>
+    </table>
+    <div class="notice n-warn" data-i18n="submission_simulated_notice"></div>
+    <div class="row no-print" style="justify-content:center">
+      <a id="track" class="btn" data-i18n="receipt_track">Track status</a>
+      <button id="print" class="btn-ghost" data-i18n="receipt_print">Print receipt</button>
+      <span id="speak-slot"></span>
+    </div>
+  </div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/pages/receipt.js"></script>
+</body>
+</html>

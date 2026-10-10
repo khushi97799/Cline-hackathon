@@ -1,0 +1,50 @@
+{
+  "scheme_id": "nsap-pension",
+  "name": "NSAP - Old Age Pension (IGNOAPS)",
+  "benefit": "Monthly pension as notified by the State/UT, paid to bank or post office account",
+  "category": "pension",
+  "status": "draft",
+  "documents": [
+    {
+      "doc_id": "age-proof",
+      "name": "Age proof",
+      "issuing_office_id": "tehsil-office-generic",
+      "what_to_carry": [
+        "Identity proof"
+      ],
+      "form": "Age certificate request form",
+      "official_link": "https://nsap.nic.in/",
+      "steps": [
+        "Visit the Tehsil/Block office",
+        "Submit the age certificate request form with identity proof",
+        "Collect the issued age certificate"
+      ]
+    },
+    {
+      "doc_id": "bpl-certificate",
+      "name": "BPL certificate",
+      "issuing_office_id": "gram-panchayat-generic",
+      "what_to_carry": [
+        "Identity proof",
+        "Address proof"
+      ],
+      "form": "BPL certificate application form",
+      "official_link": "https://nsap.nic.in/",
+      "steps": [
+        "Visit your Gram Panchayat or Municipal office",
+        "Submit the BPL certificate application form with identity and address proof",
+        "Collect the issued BPL certificate"
+      ]
+    }
+  ],
+  "source": {
+    "url": "https://nsap.nic.in/",
+    "raw_file": "data/raw/nsap-pension.txt"
+  },
+  "level": "central",
+  "state": "ALL",
+  "tags": [
+    "senior",
+    "pension"
+  ]
+}

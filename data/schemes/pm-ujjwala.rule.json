@@ -1,0 +1,54 @@
+{
+  "scheme_id": "pm-ujjwala",
+  "state": "ALL",
+  "version": 1,
+  "status": "approved",
+  "verified": true,
+  "effective_from": "2024-01-01",
+  "review_by": "2027-01-01",
+  "source": {
+    "url": "https://www.pmuy.gov.in/",
+    "page": 1,
+    "clause": "eligibility",
+    "exact_quote": "The applicant must be a woman above 18 years of age."
+  },
+  "conditions": [
+    {
+      "field": "gender",
+      "op": "=",
+      "value": "female",
+      "type": "hard",
+      "source": {
+        "url": "https://www.pmuy.gov.in/",
+        "page": 1,
+        "clause": "eligibility",
+        "exact_quote": "The applicant must be a woman above 18 years of age."
+      }
+    },
+    {
+      "field": "age",
+      "op": ">",
+      "value": 18,
+      "type": "hard",
+      "source": {
+        "url": "https://www.pmuy.gov.in/",
+        "page": 1,
+        "clause": "eligibility",
+        "exact_quote": "The applicant must be a woman above 18 years of age."
+      }
+    },
+    {
+      "field": "income_band",
+      "op": "=",
+      "value": "BPL",
+      "type": "ambiguous",
+      "note": "BPL status must be confirmed with a certificate; vague term.",
+      "source": {
+        "url": "https://www.pmuy.gov.in/",
+        "page": 1,
+        "clause": "eligibility",
+        "exact_quote": "The applicant's household\nshould belong to a BPL family as per the State/UT list, or belong to one of the specified\nSECC-2011 deprivation categories."
+      }
+    }
+  ]
+}

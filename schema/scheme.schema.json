@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Scheme",
+  "type": "object",
+  "required": ["scheme_id", "name", "benefit", "status", "documents", "source"],
+  "properties": {
+    "scheme_id": { "type": "string" },
+    "name": { "type": "object", "description": "i18n key -> localized name map or i18n key string" },
+    "benefit": { "type": "string" },
+    "category": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "in_review", "approved", "needs_update"] },
+    "last_verified": { "type": ["string", "null"], "format": "date" },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["doc_id", "name", "issuing_office_id", "what_to_carry", "form", "official_link", "steps"],
+        "properties": {
+          "doc_id": { "type": "string" },
+          "name": { "type": "string" },
+          "issuing_office_id": { "type": "string" },
+          "what_to_carry": { "type": "array", "items": { "type": "string" } },
+          "form": { "type": "string" },
+          "official_link": { "type": "string" },
+          "steps": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "url": { "type": "string" },
+        "raw_file": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scheme_id": "nsap-pension",
+  "state": "ALL",
+  "version": 1,
+  "status": "approved",
+  "verified": true,
+  "effective_from": "2024-01-01",
+  "review_by": "2027-01-01",
+  "source": {
+    "url": "https://nsap.nic.in/",
+    "page": 1,
+    "clause": "eligibility",
+    "exact_quote": "The applicant must be 60 years of age or above."
+  },
+  "conditions": [
+    {
+      "field": "age",
+      "op": ">=",
+      "value": 60,
+      "type": "hard",
+      "source": {
+        "url": "https://nsap.nic.in/",
+        "page": 1,
+        "clause": "eligibility",
+        "exact_quote": "The applicant must be 60 years of age or above."
+      }
+    },
+    {
+      "field": "income_band",
+      "op": "=",
+      "value": "BPL",
+      "type": "ambiguous",
+      "note": "BPL status is state-determined and vague; must be confirmed at office.",
+      "source": {
+        "url": "https://nsap.nic.in/",
+        "page": 1,
+        "clause": "eligibility",
+        "exact_quote": "The applicant's household must\nbelong to a Below Poverty Line (BPL) household as per the criteria determined by the\nrespective State/UT government."
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+National Social Assistance Programme (NSAP) - Indira Gandhi National Old Age Pension Scheme
+(IGNOAPS) Guidelines (sample source text for seeding)
+
+Objective: To provide old age pension to elderly persons belonging to Below Poverty Line
+(BPL) households.
+
+Benefits: A monthly pension amount as notified by the State/UT government, co-funded by
+the Central Government, paid directly to the beneficiary's bank or post office account.
+
+Eligibility: The applicant must be 60 years of age or above. The applicant's household must
+belong to a Below Poverty Line (BPL) household as per the criteria determined by the
+respective State/UT government.
+
+Required documents: age proof, BPL certificate, bank or post office account passbook copy,
+and a recent passport-size photograph.

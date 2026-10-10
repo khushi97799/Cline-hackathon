@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My data - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="narrow stack">
+  <div class="row" style="justify-content:space-between"><h1 data-i18n="md_title">My data</h1><span id="voice-slot"></span></div>
+  <div class="notice n-ok" data-i18n="md_promise">You are in control. Change or delete anything here at any time. We never store document photos, Aadhaar numbers or audio.</div>
+
+  <div id="people" class="stack"><span class="spinner"></span></div>
+
+  <div class="card stack">
+    <h2 data-i18n="md_apps">My applications</h2>
+    <div id="subs"><span class="spinner"></span></div>
+  </div>
+
+  <div class="card stack">
+    <h2 data-i18n="md_not_stored">What we never store</h2>
+    <ul class="safe-list">
+      <li>🚫 <span data-i18n="ns_1">Photos or scans of your documents (deleted right after reading)</span></li>
+      <li>🚫 <span data-i18n="ns_2">Aadhaar, PAN, voter ID, passport or bank account numbers</span></li>
+      <li>🚫 <span data-i18n="ns_3">Your voice or any audio</span></li>
+      <li>🚫 <span data-i18n="ns_4">Your login code (only a scrambled version for 5 minutes)</span></li>
+      <li>🔐 <span data-i18n="ns_5">Your login stays in a protected cookie that web pages cannot read</span></li>
+    </ul>
+  </div>
+
+  <div class="danger-zone stack hidden" id="danger">
+    <h2 data-i18n="md_danger">Delete everything</h2>
+    <p data-i18n="md_danger_text">This removes your profile, applications, login codes and your phone number from our records. It cannot be undone.</p>
+    <div class="row">
+      <button class="btn-ghost" id="export" data-i18n="md_export">Download my data</button>
+      <button class="btn-danger" id="erase" data-i18n="md_erase">Delete my account and all data</button>
+    </div>
+  </div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/mydata-view.js"></script>
+<script src="/js/pages/dashboard.js"></script>
+</body>
+</html>

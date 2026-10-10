@@ -1,0 +1,19 @@
+PM-KISAN (Pradhan Mantri Kisan Samman Nidhi) Scheme Guidelines (sample source text for seeding)
+
+Objective: To provide income support to all landholding farmers' families in the country.
+
+Benefits: Under the scheme an amount of Rs.6000/- per year is released in three equal
+installments of Rs.2000/- each, every four months.
+
+Eligibility: All landholding farmers' families, subject to certain exclusions, are eligible
+to receive benefit under the scheme. A "family" is defined as husband, wife and minor
+children who have cultivable landholding as per land records of the concerned State/UT.
+
+Exclusions: The following categories of beneficiaries of higher economic status shall not
+be eligible for benefit under the scheme: all Institutional Landholders; farmer families
+in which one or more of its members belong to the following categories: former and present
+holders of constitutional posts; former and present Ministers/State Ministers; persons who
+paid Income Tax in the last assessment year.
+
+Required documents: Aadhaar card (for linkage only, not stored by this application), land
+record documents, and bank account details for direct benefit transfer.

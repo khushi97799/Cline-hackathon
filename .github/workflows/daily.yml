@@ -1,0 +1,21 @@
+name: Daily scheme source refresh
+
+on:
+  schedule:
+    # Runs daily; actual refresh time inside the app is governed by
+    # DAILY_REFRESH_TIME when running the in-process scheduler. This
+    # workflow calls the protected endpoint directly as a backup/CI path.
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  trigger-refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call daily refresh endpoint
+        env:
+          DAILY_REFRESH_URL: ${{ secrets.DAILY_REFRESH_URL }}
+          DAILY_REFRESH_TOKEN: ${{ secrets.DAILY_REFRESH_TOKEN }}
+        run: |
+          curl -sf -X POST "$DAILY_REFRESH_URL/api/jobs/daily-refresh" \
+            -H "X-Daily-Refresh-Token: $DAILY_REFRESH_TOKEN"

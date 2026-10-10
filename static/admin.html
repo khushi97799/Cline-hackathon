@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Admin - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="container section stack">
+  <div class="row" style="justify-content:space-between"><h1>Admin dashboard</h1>
+    <button id="refresh" class="btn-ghost">⟳ Run source refresh now</button></div>
+  <div id="denied" class="notice n-warn hidden">Please <a href="/login.html?next=/admin.html">log in as admin</a>.</div>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="card stack"><h2>Schemes</h2><div style="overflow:auto"><table class="t" id="schemes"></table></div></div>
+
+  <div class="card stack hidden" id="meta">
+    <div class="row" style="justify-content:space-between"><h2 id="mtitle">Filters and last date</h2><button class="btn-ghost btn-sm" id="mclose">Close</button></div>
+    <div class="fgrid">
+      <div><label>Level</label><select id="m-level"><option value="">-</option><option value="central">Central</option><option value="state">State</option></select></div>
+      <div><label>State (or ALL)</label><input type="text" id="m-state" placeholder="ALL" /></div>
+      <div><label>Category</label><input type="text" id="m-cat" /></div>
+    </div>
+    <div><label>Who is it for?</label><div class="chips" id="m-tags"></div></div>
+    <div class="notice n-info">Last date: pick one found in the official text, or leave empty if the source gives none. A date is only saved with its exact quote.</div>
+    <div id="m-cands" class="stack"></div>
+    <div class="fgrid">
+      <div><label>Last date (YYYY-MM-DD)</label><input type="text" id="m-date" placeholder="2027-03-31" /></div>
+      <div style="grid-column:span 2"><label>Exact quote from the source</label><input type="text" id="m-quote" /></div>
+    </div>
+    <div class="row"><button id="msave">Save</button><button class="btn-ghost" id="mclear">No last date</button></div>
+  </div>
+
+  <div class="card stack">
+    <div class="row" style="justify-content:space-between"><h2>Pages we watch every day</h2><button class="btn-ghost btn-sm" id="discover">Look for new schemes now</button></div>
+    <p class="muted">Add a scheme page to watch for changes, or a list/news page (or RSS feed) that announces new schemes.</p>
+    <div class="row" style="flex-wrap:nowrap"><input type="text" id="w-url" placeholder="https://...gov.in/..." /><input type="text" id="w-id" placeholder="scheme id (empty = list page)" style="max-width:220px" /><button id="w-add">Watch</button></div>
+    <div style="overflow:auto"><table class="t" id="sources"></table></div>
+  </div>
+
+  <div class="card stack hidden" id="review">
+    <div class="row" style="justify-content:space-between"><h2 id="rtitle">Rule review</h2><button class="btn-ghost btn-sm" id="close">Close</button></div>
+    <div class="notice n-info">Approve needs: valid schema and every quote found word-for-word in the source text.</div>
+    <div class="split">
+      <div><h3>Source text</h3><pre class="src" id="src"></pre></div>
+      <div><h3>Draft rule</h3><div id="conds"></div>
+        <label style="margin-top:.8rem">Edit JSON</label><textarea id="json" rows="8" style="font-family:monospace;font-size:.8rem"></textarea></div>
+    </div>
+    <div class="row"><button id="approve">✔ Approve</button><button id="reject" class="btn-danger">✘ Reject</button></div>
+  </div>
+
+  <div class="card stack">
+    <h2>Staff access</h2>
+    <p class="muted">Only numbers you add here can log in as a CSC operator or admin. Citizens sign up on their own.</p>
+    <div class="row" style="flex-wrap:nowrap">
+      <input type="tel" id="s-phone" placeholder="10-digit mobile number" />
+      <select id="s-role" style="max-width:190px"><option value="csc_operator">CSC operator</option><option value="admin">Admin</option></select>
+      <button id="s-add">Add</button>
+    </div>
+    <div id="staff" class="muted"></div>
+  </div>
+
+  <div class="split">
+    <div class="card stack"><h2>Add a scheme from an official page</h2>
+      <p class="muted">Paste the official web address (.gov.in or .nic.in). We read it, draft the rules and the last date, and put it in the review queue. Nothing goes live until you approve.</p>
+      <div><label>Official web address</label><input type="text" id="i-url" placeholder="https://...gov.in/..." /></div>
+      <div><label>Existing scheme id (leave empty for a brand new scheme)</label><input type="text" id="i-id" placeholder="pm-kisan" /></div>
+      <details><summary class="muted">Or paste the official text instead</summary>
+        <div style="margin-top:.5rem"><label>Scheme name</label><input type="text" id="i-title" /></div>
+        <div><label>Official text</label><textarea id="i-text" rows="6"></textarea></div></details>
+      <button id="ingest">Read and draft</button>
+      <div id="ingest-out"></div></div>
+    <div class="card stack"><h2>Change tickets</h2><div id="tickets" class="muted">None</div>
+      <h3>Audit log</h3><div id="audit" class="muted" style="font-size:.85rem"></div></div>
+  </div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/admin.js"></script>
+<script src="/js/admin2.js"></script>
+<script src="/js/admin3.js"></script>
+</body>
+</html>

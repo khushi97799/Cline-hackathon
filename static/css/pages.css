@@ -1,0 +1,40 @@
+.hero { background: radial-gradient(1200px 500px at 80% -10%, #5eead4 0, transparent 60%), linear-gradient(135deg, #0b4f4a, #0f766e 55%, #115e59); color: #fff; padding: 4.5rem 0 5rem; }
+.hero h1 { font-size: 3rem; max-width: 760px; }
+.hero p { font-size: 1.2rem; max-width: 620px; color: #ccfbf1; }
+.hero .pill { display: inline-block; background: rgba(255,255,255,.15); padding: .3rem .9rem; border-radius: 99px; font-size: .85rem; margin-bottom: 1rem; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: -2.5rem; position: relative; }
+.stat { text-align: center; } .stat b { font-size: 2rem; color: var(--brand); display: block; }
+.section { padding: 3rem 0; }
+.feature .ico, .how .num { width: 48px; height: 48px; border-radius: 14px; background: var(--brand-light); display: grid; place-items: center; font-size: 1.5rem; margin-bottom: .8rem; }
+.how .num { background: var(--brand); color: #fff; font-weight: 800; font-size: 1.2rem; }
+.cta { background: linear-gradient(135deg, #f59e0b, #fbbf24); color: #111; border-radius: 24px; padding: 2.5rem; text-align: center; }
+@media (max-width: 700px) { .hero h1 { font-size: 2.1rem; } .hero { padding: 3rem 0 4rem; } }
+
+.lang-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: .9rem; }
+.lang-card { background: #fff; border: 2px solid var(--line); border-radius: 18px; padding: 1.2rem .8rem; text-align: center; cursor: pointer; transition: .15s; }
+.lang-card:hover, .lang-card:focus { border-color: var(--brand); transform: translateY(-3px); box-shadow: var(--shadow); outline: none; }
+.lang-card.sel { border-color: var(--brand); background: var(--brand-light); }
+.lang-card .native { font-size: 1.6rem; font-weight: 800; } .lang-card .eng { color: var(--muted); font-size: .85rem; }
+.lang-card .badge { margin-top: .4rem; }
+
+.auth-wrap { max-width: 440px; margin: 2.5rem auto; padding: 0 1rem; }
+.tabs { display: flex; background: #f1f5f9; border-radius: 14px; padding: 4px; margin-bottom: 1.2rem; }
+.tabs button { flex: 1; background: transparent; color: var(--muted); box-shadow: none; padding: .6rem; }
+.tabs button:hover { background: transparent; color: var(--brand); box-shadow: none; transform: none; }
+.tabs button.active { background: #fff; color: var(--brand); box-shadow: var(--shadow); }
+.otp-input { text-align: center; letter-spacing: .5em; font-size: 1.5rem !important; font-weight: 700; }
+
+.choice-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.tick-cross { display: flex; gap: .4rem; }
+.tick-cross button { width: 46px; height: 46px; padding: 0; font-size: 1.3rem; background: #f1f5f9; color: var(--muted); border-radius: 12px; }
+.tick-cross button.on-yes { background: var(--ok); color: #fff; } .tick-cross button.on-no { background: var(--bad); color: #fff; }
+.dropzone { border: 2.5px dashed #94a3b8; border-radius: 18px; padding: 2.5rem 1rem; text-align: center; background: #fff; cursor: pointer; transition: .15s; }
+.dropzone:hover, .dropzone.drag { border-color: var(--brand); background: var(--brand-light); }
+.chip { background: #f1f5f9; border-radius: 99px; padding: .3rem .8rem; font-size: .85rem; display: inline-block; margin: .2rem; }
+.field-row { display: grid; grid-template-columns: 1fr 1.4fr auto; gap: .6rem; align-items: end; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+@media (max-width: 600px) { .field-row { grid-template-columns: 1fr; } }
+
+.opt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; }
+.opt { background: #fff; border: 2px solid var(--line); border-radius: 14px; padding: 1.1rem .8rem; font-size: 1.05rem; font-weight: 700; color: var(--ink); text-align: center; cursor: pointer; }
+.opt:hover { border-color: var(--brand); background: var(--brand-light); transform: none; box-shadow: none; color: var(--ink); }
+.progress { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; } .progress i { display: block; height: 100%; background: var(--brand); transition: width .3s; }

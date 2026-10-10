@@ -1,0 +1,18 @@
+{
+  "topbar_tag": "Free service · Guidance only · Confirm at the office",
+  "nav_faq": "FAQ", "nav_about": "About", "nav_account": "My account", "foot_explore": "Explore", "foot_help": "Help", "foot_for": "For staff",
+  "listen_all": "Listen to everything", "stop": "Stop", "speed": "Speed", "slow": "Slow", "normal": "Normal", "fast": "Fast",
+  "f_level": "Level", "f_deadline": "Last date", "f_sort": "Sort by", "f_for": "Who is it for?", "f_clear": "Clear all filters",
+  "f_only_verified": "Only verified by admin", "f_schemes": "schemes",
+  "level_central": "Central government", "level_state": "State government",
+  "dl_none": "No last date announced", "dl_closed": "Closed on", "dl_today": "Last day is today!", "dl_days_left": "days left", "dl_last": "Last date",
+  "dl_f_open": "Still open", "dl_f_soon": "Closing soon", "dl_f_closed": "Closed", "dl_f_none": "No last date",
+  "dl_closed_note": "The last date has passed. Please check the official website for a new date before you go.",
+  "dl_none_note": "The official source does not give a last date. Please ask at the office.",
+  "needs_update_note": "The official page changed. Please confirm at the office before you go.",
+  "sort_rel": "Best first", "sort_deadline": "Last date (soonest)", "sort_recent": "Newly added", "sort_name": "Name A-Z",
+  "tag_farmer": "Farmers", "tag_women": "Women", "tag_senior": "Senior citizens", "tag_student": "Students", "tag_health": "Health",
+  "tag_housing": "Housing", "tag_pension": "Pension", "tag_disability": "Disability", "tag_employment": "Jobs", "tag_business": "Business",
+  "tag_child": "Children", "tag_food": "Food", "tag_energy": "Cooking gas and power",
+  "code_sent": "A code was sent to your phone.", "resend": "Resend code", "resend_in": "Resend code in"
+}

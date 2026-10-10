@@ -1,0 +1,41 @@
+{
+  "scheme_id": "pm-kisan",
+  "state": "ALL",
+  "version": 1,
+  "status": "approved",
+  "verified": true,
+  "effective_from": "2024-01-01",
+  "review_by": "2027-01-01",
+  "source": {
+    "url": "https://pmkisan.gov.in/",
+    "page": 1,
+    "clause": "eligibility",
+    "exact_quote": "All landholding farmers' families, subject to certain exclusions, are eligible\nto receive benefit under the scheme."
+  },
+  "conditions": [
+    {
+      "field": "occupation",
+      "op": "=",
+      "value": "farmer",
+      "type": "hard",
+      "source": {
+        "url": "https://pmkisan.gov.in/",
+        "page": 1,
+        "clause": "eligibility",
+        "exact_quote": "All landholding farmers' families, subject to certain exclusions, are eligible\nto receive benefit under the scheme."
+      }
+    },
+    {
+      "field": "land_holding",
+      "op": ">",
+      "value": 0,
+      "type": "hard",
+      "source": {
+        "url": "https://pmkisan.gov.in/",
+        "page": 1,
+        "clause": "eligibility",
+        "exact_quote": "have cultivable landholding as per land records of the concerned State/UT."
+      }
+    }
+  ]
+}

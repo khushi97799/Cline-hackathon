@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<div class="auth-wrap">
+  <div class="card stack">
+    <div class="center"><span class="logo-mark" style="display:inline-grid;width:52px;height:52px;font-size:1.6rem">🎯</span></div>
+    <h2 class="center" data-i18n="login_title">Login / Sign up</h2>
+    <p class="center muted" data-i18n="login_sub">Use your phone number.</p>
+    <div class="tabs" id="tabs">
+      <button type="button" class="active" data-role="citizen" data-i18n="login_tab_citizen">Citizen</button>
+      <button type="button" data-role="csc_operator" data-i18n="login_tab_csc">CSC Operator</button>
+      <button type="button" data-role="admin" data-i18n="login_tab_admin">Admin</button>
+    </div>
+    <div id="test-banner" class="notice n-warn hidden"></div>
+
+    <div id="phone-step" class="stack">
+      <div><label for="phone" data-i18n="phone_label">Phone number</label>
+      <input type="tel" id="phone" inputmode="numeric" maxlength="14" data-i18n-ph="phone_ph" placeholder="10-digit mobile number" /></div>
+      <button id="send" class="btn-block btn-lg" data-i18n="send_otp">Send code</button>
+    </div>
+
+    <div id="otp-step" class="stack hidden">
+      <div><label for="otp" data-i18n="otp_label">Enter the code</label>
+      <input type="text" id="otp" class="otp-input" inputmode="numeric" maxlength="6" placeholder="••••••" /></div>
+      <button id="verify" class="btn-block btn-lg" data-i18n="verify_otp">Verify</button>
+      <button id="resend" class="btn-ghost btn-block" disabled>Resend code</button>
+      <button id="change" class="btn-ghost btn-block" data-i18n="change_number">Change number</button>
+    </div>
+  </div>
+</div>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/pages/login.js"></script>
+</body>
+</html>

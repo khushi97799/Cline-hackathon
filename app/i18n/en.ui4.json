@@ -1,0 +1,19 @@
+{
+  "md_title": "My data",
+  "md_promise": "You are in control. Change or delete anything here at any time. We never store document photos, Aadhaar numbers or audio.",
+  "md_apps": "My applications", "md_not_stored": "What we never store",
+  "ns_1": "Photos or scans of your documents (deleted right after reading)",
+  "ns_2": "Aadhaar, PAN, voter ID, passport or bank account numbers",
+  "ns_3": "Your voice or any audio",
+  "ns_4": "Your login code (only a scrambled version, for 5 minutes)",
+  "ns_5": "Your login stays in a protected cookie that web pages cannot read",
+  "md_danger": "Delete everything",
+  "md_danger_text": "This removes your profile, applications, login codes and your phone number from our records. It cannot be undone.",
+  "md_export": "Download my data", "md_erase": "Delete my account and all data",
+  "md_confirm_erase": "Delete your account and ALL your data? This cannot be undone.",
+  "md_confirm_rm": "Remove this value?", "md_removed": "Removed", "md_saved": "Saved", "md_cancel": "Cancel",
+  "md_rename": "Change name", "md_del_person": "Delete this person", "md_unnamed": "My details",
+  "md_empty": "Nothing is saved yet.", "md_none": "No details are saved.", "md_no_apps": "No applications yet.",
+  "sg_tag": "matches who it is for", "sg_text": "matches the description", "sg_all": "See all results for",
+  "sg_none": "No scheme found. Try another word, or", "sg_browse": "browse all schemes"
+}

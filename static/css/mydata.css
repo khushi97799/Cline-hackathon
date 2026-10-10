@@ -1,0 +1,18 @@
+/* Search dropdown extras */
+.sugg a b { display: block; }
+.sugg a small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sugg a em { font-style: normal; font-size: .72rem; color: var(--brand-dark); background: var(--brand-light); border-radius: 999px; padding: .05rem .5rem; }
+.sugg a.on, .sugg a:focus { background: var(--brand-light); outline: none; }
+.sugg a.all { color: var(--brand); font-weight: 700; border-bottom: 0; }
+.sugg .none { padding: .8rem 1rem; color: var(--muted); font-size: .9rem; }
+mark { background: #fde68a; color: inherit; border-radius: 3px; padding: 0 1px; }
+
+/* My data page */
+.field-edit { display: grid; grid-template-columns: minmax(110px, 1fr) 2fr auto; gap: .6rem; align-items: center; padding: .75rem 0; border-bottom: 1px solid var(--line); }
+.field-edit .val { font-weight: 600; word-break: break-word; }
+.field-edit input { padding: .55rem .8rem; }
+.field-edit .acts { display: flex; gap: .4rem; flex-wrap: wrap; justify-content: flex-end; }
+@media (max-width: 640px) { .field-edit { grid-template-columns: 1fr; } .field-edit .acts { justify-content: flex-start; } }
+.danger-zone { border: 2px solid var(--bad); border-radius: var(--radius); padding: 1.2rem; background: #fff5f5; }
+.switch-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--line); }
+.safe-list { list-style: none; padding: 0; margin: 0; } .safe-list li { padding: .3rem 0; }

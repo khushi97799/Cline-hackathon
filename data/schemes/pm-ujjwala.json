@@ -1,0 +1,50 @@
+{
+  "scheme_id": "pm-ujjwala",
+  "name": "PM Ujjwala Yojana",
+  "benefit": "Free LPG connection with first refill and stove assistance",
+  "category": "household",
+  "status": "draft",
+  "documents": [
+    {
+      "doc_id": "bpl-certificate",
+      "name": "BPL certificate / SECC list inclusion proof",
+      "issuing_office_id": "gram-panchayat-generic",
+      "what_to_carry": [
+        "Identity proof",
+        "Address proof"
+      ],
+      "form": "BPL certificate application form",
+      "official_link": "https://www.pmuy.gov.in/",
+      "steps": [
+        "Visit your Gram Panchayat or Municipal office",
+        "Submit the BPL certificate application form with identity and address proof",
+        "Collect the issued BPL certificate or SECC confirmation letter"
+      ]
+    },
+    {
+      "doc_id": "bank-account",
+      "name": "Bank account passbook copy",
+      "issuing_office_id": "csc-center-generic",
+      "what_to_carry": [
+        "Identity proof"
+      ],
+      "form": "Bank account opening / passbook request form",
+      "official_link": "https://www.pmuy.gov.in/",
+      "steps": [
+        "Visit your bank branch or nearest CSC centre",
+        "Request a passbook copy or bank account opening if you do not have one",
+        "Keep a photocopy of the first page of the passbook"
+      ]
+    }
+  ],
+  "source": {
+    "url": "https://www.pmuy.gov.in/",
+    "raw_file": "data/raw/pm-ujjwala.txt"
+  },
+  "level": "central",
+  "state": "ALL",
+  "tags": [
+    "women",
+    "energy"
+  ]
+}

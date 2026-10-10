@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Track - Scheme Sniper</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<main class="narrow stack">
+  <div class="card stack">
+    <h1 data-i18n="track_title">Track your application</h1>
+    <p class="muted" data-i18n="track_sub"></p>
+    <div class="row" style="flex-wrap:nowrap"><input type="text" id="arn" data-i18n-ph="track_ph" placeholder="SIM-XXXX-2026-XXXXXX" /><button id="go" data-i18n="track_go">Check status</button></div>
+    <div class="notice n-warn" data-i18n="submission_simulated_notice"></div>
+  </div>
+  <div class="card stack hidden" id="res">
+    <div class="arn" id="a" style="font-size:1.2rem"></div>
+    <div class="timeline" id="tl"></div>
+    <p class="muted" id="when"></p>
+  </div>
+</main>
+<script src="/js/app.js"></script>
+<script src="/js/voice.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/chrome.js"></script>
+<script src="/js/pages/track.js"></script>
+</body>
+</html>
